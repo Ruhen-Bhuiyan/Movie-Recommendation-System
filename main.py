@@ -18,3 +18,12 @@ def combination(row):
 		
 
 df["combination"] = df.apply(combination,axis=1)
+
+
+
+
+////////////
+with open("dataset.csv", "r") as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=',')
+    for lines in csv_reader:
+      print(lines[1])

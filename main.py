@@ -22,14 +22,3 @@ with open("dataset.csv", "r") as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     for lines in csv_reader:
       print(lines[1])
-
-
-#loop through the csv list
-for row in csv_file:
-    #if current rows 2nd value is equal to input, print that row
-    if number == row[1]:
-         print (row)
-
-print("Check PG values in Position column:\n") 
-df1 = df['Position'].str.contains("PG") 
-print(df1) 

@@ -29,3 +29,7 @@ for row in csv_file:
     #if current rows 2nd value is equal to input, print that row
     if number == row[1]:
          print (row)
+
+print("Check PG values in Position column:\n") 
+df1 = df['Position'].str.contains("PG") 
+print(df1) 

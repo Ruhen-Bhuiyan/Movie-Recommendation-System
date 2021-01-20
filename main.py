@@ -9,8 +9,7 @@ def get_index(title):
 df = pd.read_csv("F:\\GithubMY\\Movie\\dataset.csv")
 features = []
 for feature in features:
-	df[feature] = df[feature].fillna('')
-	
+	df[feature] = df[feature].fillna('')	
 def combination(row):
 	try:	
 	except:

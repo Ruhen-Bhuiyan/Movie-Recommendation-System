@@ -8,6 +8,7 @@ def get_index(title):
 	return df[df.title == title]["index"].values[0]
 df = pd.read_csv("F:\\GithubMY\\Movie\\dataset.csv")
 features = []
+
 for feature in features:
 	df[feature] = df[feature].fillna('')		
 def combination(row):

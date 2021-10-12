@@ -12,6 +12,7 @@ for feature in features:
 	df[feature] = df[feature].fillna('')		
 def combination(row):
 	try:	
+		
 	except:
 		
 df["combination"] = df.apply(combination,axis=1)
